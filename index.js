@@ -20,7 +20,6 @@ btn.addEventListener("click", (e) => {
   } else {
     api.innerHTML = `${userName.value}, ${userEmail.value}, ${userPassword.value}`;
     errorFetched.innerHTML = "";
-    window.open("./home.html")
 
     setTimeout(() => {
       userName.value = "";
