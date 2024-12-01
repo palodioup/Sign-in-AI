@@ -4,7 +4,6 @@ const userEmail = document.getElementById("email");
 const userPassword = document.getElementById("password");
 const api = document.getElementById("result");
 const errorFetched = document.getElementById("error");
-export const account = api
 
 btn.addEventListener("click", (e) => {
   e.preventDefault();
