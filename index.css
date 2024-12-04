@@ -22,11 +22,16 @@ form {
   font-size: 2rem;
   text-align: center;
   padding: 100px;
+  background: #ccc;
+  border-radius: 20px;
 }
 
 input {
-  border: 1px green solid;
+  border: none;
+  border-radius: 15px;
   padding: 10px;
+  color: white;
+  background: #202020;
 }
 
 .pass-div {

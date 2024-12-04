@@ -11,11 +11,11 @@ btn.addEventListener("click", (e) => {
     api.innerHTML = "";
     errorFetched.innerHTML = "Name, email and password are required";
   } else if (userPassword.value.length <= 9) {
-      api.innerHTML = "";
-    errorFetched.innerHTML ="Password to short.";
+    api.innerHTML = "";
+    errorFetched.innerHTML = "Password to short.";
   } else if (userPassword.value.length >= 30) {
-      api.innerHTML = "";
-    errorFetched.innerHTML ="Password to long.";
+    api.innerHTML = "";
+    errorFetched.innerHTML = "Password to long.";
   } else {
     api.innerHTML = `${userName.value}, ${userEmail.value}, ${userPassword.value}`;
     errorFetched.innerHTML = "";
@@ -24,6 +24,8 @@ btn.addEventListener("click", (e) => {
       userName.value = "";
       userEmail.value = "";
       userPassword.value = "";
+      api.innerHTML = "";
+      errorFetched.innerHTML = "";
     }, 10000);
   }
 });
