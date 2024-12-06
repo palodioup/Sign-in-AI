@@ -4,6 +4,7 @@ const userEmail = document.getElementById("email");
 const userPassword = document.getElementById("password");
 const api = document.getElementById("result");
 const errorFetched = document.getElementById("error");
+const checkBox = document.getElementById("checkbox");
 
 btn.addEventListener("click", (e) => {
   e.preventDefault();
@@ -24,8 +25,16 @@ btn.addEventListener("click", (e) => {
       userName.value = "";
       userEmail.value = "";
       userPassword.value = "";
-      api.innerHTML = "";
       errorFetched.innerHTML = "";
     }, 10000);
   }
 });
+
+function Dog () {
+  this.name = "Albert"
+  this.color = "Black"
+  this.numLegs = 4
+}
+
+const myHound = new Dog()
+console.log(myHound)
